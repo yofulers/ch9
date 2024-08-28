@@ -1,0 +1,195 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+        }
+
+        .login-container {
+               background-image: url('https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif');
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 300%;
+            display: none;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 22px;
+        }
+
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: calc(108% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #969b97;
+            color: #111111;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background-color: #838d8b;
+        }
+
+        .cheat-sheet {
+            width: 100%;
+            max-width: 400px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background-image: url('https://i.postimg.cc/VkcLHmCs/11978636-1f038.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+
+        .cheat-sheet.bg-changed {
+            background-image: url('https://i.postimg.cc/2yRSRDKx/Find-Share-on-GIPHY.gif');
+        }
+
+        h1 {
+            font-size: 22px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-image: linear-gradient(45deg, #ff6347, #ffa07a, #20b2aa, #9370db);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.show {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn-menu1, .btn-menu2, .btn-mor, .btn-toggle-bg {
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-menu1 { background-color: #17a2b8; }
+        .btn-menu1:hover { background-color: #138496; }
+        .btn-menu2 { background-color: #dc3545; }
+        .btn-menu2:hover { background-color: #c82333; }
+        .btn-mor { background-color: #007BFF; }
+        .btn-mor:hover { background-color: #0056b3; }
+        .btn-toggle-bg { background-color: #141414; }
+        .btn-toggle-bg:hover { background-color: #f10e0e; }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            width: 100%;
+            max-width: 300px;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-23 {
+            background-color: #0f0301;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn-23:hover { background-color: #f50b0b; }
+        .btn-23:active { transform: scale(0.98); }
+
+        .hidden-service {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .hidden-image {
+            display: none;
+            margin-top: 15px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media only screen and (max-width: 768px) and (orientation: landscape) {
+            .login-container, .cheat-sheet {
+                max-width: 100%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .btn-menu1, .btn-menu2, .btn-mor, .btn-toggle-bg {
+                font-size: 14px;
+                padding: 8px 14px;
+            }
+
+            .btn-23 {
+                font-size: 14px;
+                padding: 8px 14px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .login-container, .cheat-sheet {
+                max-width: 90%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .btn-menu1, .btn-menu2, .btn-mor, .btn-toggle-bg {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            .btn-23 {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+  
